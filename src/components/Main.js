@@ -9,7 +9,8 @@ import {
   fetchComments,
   fetchDishes,
   fetchPromos,
-  fetchLeaders
+  fetchLeaders,
+  postFeedback
 } from "../redux/ActionCreators";
 
 import About from "./About";
@@ -40,7 +41,8 @@ const mapDispatchToProps = dispatch => ({
   },
   fetchComments: () => dispatch(fetchComments()),
   fetchPromos: () => dispatch(fetchPromos()),
-  fetchLeaders: () => dispatch(fetchLeaders())
+  fetchLeaders: () => dispatch(fetchLeaders()),
+  postFeedback: feedback => dispatch(postFeedback(feedback))
 });
 
 class Main extends Component {
@@ -118,7 +120,10 @@ class Main extends Component {
                 exact
                 path="/contactus"
                 component={() => (
-                  <Contact resetFeedbackForm={this.props.resetFeedbackForm} />
+                  <Contact
+                    resetFeedbackForm={this.props.resetFeedbackForm}
+                    postFeedback={this.props.postFeedback}
+                  />
                 )}
               />
               } />
