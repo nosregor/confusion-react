@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Home from './HomeComponent';
-import About from './AboutComponent';
-import Menu from './MenuComponent';
-import Contact from './ContactComponent';
-import DishDetail from './DishdetailComponent';
-import Favorites from './FavoriteComponent';
-import Header from './HeaderComponent';
-import Footer from './FooterComponent';
+import Home from './Home';
+import About from './About';
+import Menu from './Menu';
+import Contact from './Contact';
+import DishDetail from './Dishdetail';
+import Favorites from './Favorite';
+import Header from './Header';
+import Footer from './Footer';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import {
