@@ -209,6 +209,13 @@
       "comment": "This is a test comment.",
       "date": "2019-05-12T17:15:46.452Z",
       "id": 20
+    },
+    {
+      "dishId": 0,
+      "author": "nmn",
+      "comment": "mn n ",
+      "date": "2020-02-17T22:26:59.923Z",
+      "id": 21
     }
   ],
   "promotions": [
@@ -281,6 +288,16 @@
       "contactType": "Email",
       "message": "TEST",
       "id": 2
+    },
+    {
+      "firstname": "Andrew",
+      "lastname": "Rogerson",
+      "telnum": "3412",
+      "email": "werdnanosregor@gmail.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "cdscw",
+      "id": 3
     }
   ]
 }
